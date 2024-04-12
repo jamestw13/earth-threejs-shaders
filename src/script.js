@@ -89,7 +89,7 @@ const atmosphereMaterial = new THREE.ShaderMaterial({
 });
 
 const atmosphere = new THREE.Mesh(earthGeometry, atmosphereMaterial);
-atmosphere.scale.set(1.02, 1.02, 1.02);
+atmosphere.scale.set(1.04, 1.04, 1.04);
 scene.add(atmosphere);
 
 /**
