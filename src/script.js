@@ -124,6 +124,12 @@ renderer.setSize(sizes.width, sizes.height);
 renderer.setPixelRatio(sizes.pixelRatio);
 renderer.setClearColor('#000011');
 
+const maxAnisotropy = Math.max(renderer.capabilities.getMaxAnisotropy(), 8);
+
+earthDayTexture.anisotropy = maxAnisotropy;
+earthNightTexture.anisotropy = maxAnisotropy;
+earthSpecularCloudsTexture.anisotropy = maxAnisotropy;
+
 /**
  * Animate
  */
